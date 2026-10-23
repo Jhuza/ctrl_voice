@@ -1,0 +1,18 @@
+{
+  "slug": "ctrl_voice",
+  "entry": "app.py",
+  "title": "Control por voz",
+  "category": "IoT",
+  "headline": "Tu voz.",
+  "accent": "Una acción conectada.",
+  "description": "Transcribe una orden hablada y la publica como mensaje MQTT.",
+  "input": "Voz capturada por el navegador.",
+  "output": "Transcripción y publicación JSON en el tópico controlVoz.",
+  "steps": "Prepara el receptor, pulsa Escuchar y permite el micrófono. La transcripción se envía al broker configurado.",
+  "technology": "Web Speech API · Paho MQTT",
+  "limits": "Requiere navegador compatible, micrófono y broker. El receptor determina qué acción corresponde al texto.",
+  "image": "OIG6.jpg",
+  "url": "https://ctrlvoice-8xolwmsfbocxfhpr9znjmh.streamlit.app/",
+  "repo": "https://github.com/Jhuza/ctrl_voice",
+  "kind": "vision"
+}

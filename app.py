@@ -28,7 +28,9 @@ client1.on_message = on_message
 
 
 
-st.title("INTERFACES MULTIMODALES")
+from aurora import app_header, footer
+app_header()
+
 st.subheader("CONTROL POR VOZ")
 
 image = Image.open('voice_ctrl.jpg')
@@ -40,7 +42,7 @@ st.image(image, width=200)
 
 st.write("Toca el Botón y habla ")
 
-stt_button = Button(label=" Inicio ", width=200)
+stt_button = Button(label="Escuchar", width=200)
 
 stt_button.js_on_event("button_click", CustomJS(code="""
     var recognition = new webkitSpeechRecognition();
@@ -82,3 +84,6 @@ if result:
         os.mkdir("temp")
     except:
         pass
+
+
+footer("TEXTO / IMAGEN / VOZ / INTERACCIÓN")
